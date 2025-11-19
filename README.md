@@ -1,3 +1,10 @@
+# Build Status
+
+| Source       | `main` Status | `main` Timestamp |
+|--------------|--------------|------------|
+| **CISAGOV** | ![Build Status](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fcisagov%2Ficsnpp-opcua-binary%2Fcommits%2Fmain%2Fstatus&query=state&label=build) | ![Last Build](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fcisagov%2Ficsnpp-opcua-binary%2Fcommits%2Fmain%2Fstatus&query=statuses[0].updated_at&label=last%20build&color=lightgrey) |
+| **Development** | ![Build Status](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fparsitects%2Ficsnpp-opcua-binary%2Fcommits%2Fmain%2Fstatus&query=state&label=build) | ![Last Build](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fparsitects%2Ficsnpp-opcua-binary%2Fcommits%2Fmain%2Fstatus&query=statuses[0].updated_at&label=last%20build&color=lightgrey) |
+
 # ICSNPP-OPCUA_Binary
 
 Industrial Control Systems Network Protocol Parsers (ICSNPP) - OPC Unified Architecture Binary (OPC UA Binary).
@@ -193,40 +200,6 @@ For development and implementation details, see the [developer_guide](developer_
 
 ## Coverage
 Roughly 70% of the defined specification is covered by this parser implementation.  The implementation includes the top level message header information such as the Msg_HEL, Msg_ACK, Msg_ERR, Msg_OPN, Msg_MSG, and Msg_CLO.  The parser also captures the OpcUA StatusCode information along with the OpcUA Diagnostic information.  With regards to the services implemented, the parser covers ~26% of the services available as there are 42 services in total with 11 of those services implemented.  See the [Logging Capabilities](#logging-capabilities) section for detailed information of the parser coverage.
-
-## ICSNPP Packages
-
-All ICSNPP Packages:
-* [ICSNPP](https://github.com/cisagov/icsnpp)
-
-Full ICS Protocol Parsers:
-* [BACnet](https://github.com/cisagov/icsnpp-bacnet)
-    * Full Zeek protocol parser for BACnet (Building Control and Automation)
-* [BSAP](https://github.com/cisagov/icsnpp-bsap)
-    * Full Zeek protocol parser for BSAP (Bristol Standard Asynchronous Protocol) over IP
-    * Full Zeek protocol parser for BSAP Serial comm converted using serial tap device
-* [Ethercat](https://github.com/cisagov/icsnpp-ethercat)
-    * Full Zeek protocol parser for Ethercat
-* [Ethernet/IP and CIP](https://github.com/cisagov/icsnpp-enip)
-    * Full Zeek protocol parser for Ethernet/IP and CIP
-* [GE SRTP](https://github.com/cisagov/icsnpp-ge-srtp)
-    * Full Zeek protocol parser for GE SRTP
-* [Genisys](https://github.com/cisagov/icsnpp-genisys)
-    * Full Zeek protocol parser for Genisys
-* [OPCUA-Binary](https://github.com/cisagov/icsnpp-opcua-binary)
-    * Full Zeek protocol parser for OPC UA (OPC Unified Architecture) - Binary
-* [S7Comm](https://github.com/cisagov/icsnpp-s7comm)
-    * Full Zeek protocol parser for S7comm, S7comm-plus, and COTP
-* [Synchrophasor](https://github.com/cisagov/icsnpp-synchrophasor)
-    * Full Zeek protocol parser for Synchrophasor Data Transfer for Power Systems (C37.118)
-* [Profinet IO CM](https://github.com/cisagov/icsnpp-profinet-io-cm)
-    * Full Zeek protocol parser for Profinet I/O Context Manager
-
-Updates to Zeek ICS Protocol Parsers:
-* [DNP3](https://github.com/cisagov/icsnpp-dnp3)
-    * DNP3 Zeek script extending logging capabilities of Zeek's default DNP3 protocol parser
-* [Modbus](https://github.com/cisagov/icsnpp-modbus)
-    * Modbus Zeek script extending logging capabilities of Zeek's default Modbus protocol parser
 
 ### License
 
