@@ -56,7 +56,7 @@ export {
         # UsernameIdentityToken
         ext_obj_user_name             : string &log &optional;
         ext_obj_password              : string &log &optional;
-        ext_obj_encryption_algorithom : string &log &optional;
+        ext_obj_encryption_algorithm : string &log &optional;
 
         # Common in X509IdentityToken and IssuedIdentityToken
         ext_obj_certificate_data : string &log &optional;
