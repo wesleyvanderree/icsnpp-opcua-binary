@@ -64,9 +64,8 @@
             vector<OpcUA_String *>  *stringTable = NULL;
             if (res_hdr->string_table_size() > 0) {
                 stringTable = res_hdr->string_table();
+                generateDiagInfoEvent(connection, info->GetField(OPCUA_LINK_ID_SRC_IDX), res_hdr->service_diag(), stringTable, innerDiagLevel, StatusCode_ResponseHeader_DiagInfo_Key, is_orig, DiagInfo_ResponseHeader_Key);
             }
-
-            generateDiagInfoEvent(connection, info->GetField(OPCUA_LINK_ID_SRC_IDX), res_hdr->service_diag(), stringTable, innerDiagLevel, StatusCode_ResponseHeader_DiagInfo_Key, is_orig, DiagInfo_ResponseHeader_Key);
         }
 
         // Log the Additional Header information
